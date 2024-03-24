@@ -40,7 +40,7 @@ export const Navbar = () => {
                 <div className="flex flex-row gap-10 items-center">
                     <Link
                         className="hover:bg-sky-100 dark:bg-opacity-30 px-2 py-1 rounded-md transition-all"
-                        href="/card-finder"
+                        href="https://novacards.ai/enter-notes"
                     >
                         <MagnifyingGlassIcon
                             className="inline-flex mr-2"
@@ -51,7 +51,7 @@ export const Navbar = () => {
                     </Link>
                     <Link
                         className="hover:bg-sky-100 dark:bg-opacity-30 px-2 py-1 rounded-md transition-all flex flex-row items-center"
-                        href="/card-maker"
+                        href="https://novacards.ai/enter-notes"
                     >
                         <Image
                             src="/ai_sparkle.svg"
@@ -64,7 +64,7 @@ export const Navbar = () => {
                     </Link>
                     <Link
                         className="hover:bg-sky-100 dark:bg-opacity-30 px-2 py-1 rounded-md transition-all inline-flex items-center hover:animate-pulse"
-                        href="/premium"
+                        href="https://novacards.ai/sign-up"
                     >
                         <StarFilledIcon
                             className="inline-flex mr-2  text-amber-500"
@@ -75,7 +75,7 @@ export const Navbar = () => {
                     </Link>
                     <Link
                         className="hover:bg-sky-100 dark:bg-opacity-30 px-2 py-1 rounded-md transition-all"
-                        href="/about-us"
+                        href="https://novacards.ai/how-novacards-works"
                     >
                         About us
                     </Link>
@@ -103,22 +103,22 @@ export const Navbar = () => {
                         <Popover className="p-1 w-56 overflow-auto rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 entering:animate-in entering:fade-in entering:zoom-in-95 exiting:animate-out exiting:fade-out exiting:zoom-out-95 fill-mode-forwards origin-top-left border-2 border-black dark:bg-black border-white ring-white">
                             <Menu className="outline-none">
                                 <MenuItem id="card-finder">
-                                    <Link className="w-full" href="/card-finder">
+                                    <Link className="w-full" href="https://novacards.ai/enter-notes">
                                         Card finder <MagnifyingGlassIcon className="inline-flex" />
                                     </Link>
                                 </MenuItem>
                                 <MenuItem id="card-maker">
-                                    <Link className="w-full" href="/card-maker">
+                                    <Link className="w-full" href="https://novacards.ai/enter-notes">
                                         Card maker <LightningBoltIcon className="inline-flex" />
                                     </Link>
                                 </MenuItem>
                                 <MenuItem id="premium">
-                                    <Link className="w-full" href="/premium">
+                                    <Link className="w-full" href="https://novacards.ai/sign-up">
                                         Premium <StarFilledIcon className="inline-flex" />
                                     </Link>
                                 </MenuItem>
                                 <MenuItem id="about-us">
-                                    <Link className="w-full" href="/about-us">
+                                    <Link className="w-full" href="https://novacards.ai/how-novacards-works">
                                         About us
                                     </Link>
                                 </MenuItem>
