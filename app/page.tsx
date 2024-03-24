@@ -21,7 +21,10 @@ export async function generateStaticParams() {
 
 const getBlogEntries = async (): Promise<BlogQueryResult> => {
   const entries = await client.getEntries({ content_type: "blog" });
-  return entries;
+  let blogPosts: BlogQueryResult = {
+    items: entries.items as any,
+  };
+  return blogPosts;
 };
 
 export default async function Home() {
