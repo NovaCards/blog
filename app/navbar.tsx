@@ -34,7 +34,7 @@ export const Navbar = () => {
                             height={40}
                             className="mr-3"
                         />
-                        <h2 className="text-2xl font-bold">NOVACARDS</h2>
+                        <h2 className="text-2xl font-bold">NovaCards | Blog</h2>
                     </Link>
                 </div>
                 <div className="flex flex-row gap-10 items-center">
