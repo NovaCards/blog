@@ -1,4 +1,5 @@
 /* src/app/articles/[slug]/page.tsx */
+import { BlogItem } from '@/app/types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { createClient } from "contentful";
 
@@ -6,6 +7,24 @@ const client = createClient({
     space: process.env.SPACE_ID ?? "",
     accessToken: process.env.ACCESS_TOKEN || "",
 });
+
+type BlogPageProps = {
+    params: {
+        slug: string;
+    };
+};
+
+export async function generateStaticParams() {
+    const queryOptions = {
+        content_type: "blog",
+        select: "fields.slug",
+    };
+
+    const articles = await client.getEntries(queryOptions);
+    return articles.items.map((article) => ({
+        slug: article.fields.slug,
+    }));
+}
 
 const fetchBlogPost = async (slug: string): Promise<BlogItem> => {
     const queryOptions = {
