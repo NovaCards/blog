@@ -100,7 +100,7 @@ export const Navbar = () => {
                         >
                             <HamburgerMenuIcon className="text-black dark:text-white" />
                         </Button>
-                        <Popover className="p-1 w-56 overflow-auto rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 entering:animate-in entering:fade-in entering:zoom-in-95 exiting:animate-out exiting:fade-out exiting:zoom-out-95 fill-mode-forwards origin-top-left border-2 border-black">
+                        <Popover className="p-1 w-56 overflow-auto rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 entering:animate-in entering:fade-in entering:zoom-in-95 exiting:animate-out exiting:fade-out exiting:zoom-out-95 fill-mode-forwards origin-top-left border-2 border-black dark:bg-black border-white ring-white">
                             <Menu className="outline-none">
                                 <MenuItem id="card-finder">
                                     <Link className="w-full" href="/card-finder">
