@@ -34,10 +34,10 @@ const fetchBlogPost = async (slug: string): Promise<BlogItem> => {
     const queryResult = await client.getEntries(queryOptions);
     let blogItem: BlogItem = {
         fields: {
-            title: queryResult.items[0].fields.title,
+            title: queryResult.items[0].fields.title?.toString() || "", // Provide a default value for the title field
             slug: '',
-            date: queryResult.items[0].fields.date,
-            content: queryResult.items[0].fields.content,
+            date: new Date(queryResult.items[0].fields.date as string),
+            content: queryResult.items[0].fields.content as any,
         }
     };
     return blogItem;
