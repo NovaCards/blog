@@ -32,7 +32,15 @@ const fetchBlogPost = async (slug: string): Promise<BlogItem> => {
         "fields.slug[match]": slug,
     };
     const queryResult = await client.getEntries(queryOptions);
-    return queryResult.items[0];
+    let blogItem: BlogItem = {
+        fields: {
+            title: queryResult.items[0].fields.title,
+            slug: '',
+            date: queryResult.items[0].fields.date,
+            content: queryResult.items[0].fields.content,
+        }
+    };
+    return blogItem;
 };
 
 export default async function BlogPage(props: BlogPageProps) {
