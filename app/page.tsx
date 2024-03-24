@@ -4,8 +4,8 @@ import { createClient } from "contentful";
 import { BlogQueryResult } from "./types";
 
 const client = createClient({
-  space: process.env.SPACE_ID,
-  accessToken: process.env.ACCESS_TOKEN,
+  space: process.env.SPACE_ID ?? "",
+  accessToken: process.env.ACCESS_TOKEN || "",
 });
 
 export async function generateStaticParams() {
