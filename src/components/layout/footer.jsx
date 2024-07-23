@@ -45,8 +45,8 @@ export const Footer = () => {
                         <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdwg0c3CYOFjFyugummH6sie34hjy7WyygKOvn5ZMPPOT1hdw/viewform">
                             Contact
                         </Link>
-                        <Link href="https://blog.novacards.ai">
-                            Blog
+                        <Link href="https://novacards.ai">
+                            Home
                         </Link>
                     </div>
                     <div></div>
