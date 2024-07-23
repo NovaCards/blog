@@ -9,7 +9,7 @@ const PostHeader = ({ post }) => {
 
   return (
     <>
-      <h1 className='text-white'>{title}</h1>
+      <h1 className='text-white text-center'>{title}</h1>
       <div className='hidden md:flex md:justify-between md:items-center md:mb-2'>
         <Link href={author.fields.website} className='text-white'>
           <Avatar name={author.fields.name} picture={author.fields.picture} />
