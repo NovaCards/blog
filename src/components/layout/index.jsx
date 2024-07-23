@@ -1,5 +1,5 @@
-import { Navbar } from './Navbar'
-import { Footer } from './Footer'
+import { Navbar } from '@/components/layout/navbar'
+import { Footer } from '@/components/layout/footer'
 import { Helmet } from 'react-helmet'
 
 
