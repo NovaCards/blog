@@ -5,11 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import {
-    ListBoxItem,
-    ListBoxItemProps,
-} from 'react-aria-components'
-import {
-    MagnifyingGlassIcon,
     ReaderIcon,
     HomeIcon
 } from '@radix-ui/react-icons'
@@ -63,14 +58,5 @@ export const Navbar = () => {
             </div>
         </nav>
 
-    )
-}
-
-function MenuItem(props: ListBoxItemProps) {
-    return (
-        <ListBoxItem
-            {...props}
-            className="group flex w-full items-center rounded-md px-3 py-1.5 box-border outline-none cursor-default focus:bg-gray-200 dark:text-white dark:hover:bg-gray-800"
-        />
     )
 }
