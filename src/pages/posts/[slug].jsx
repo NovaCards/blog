@@ -12,7 +12,7 @@ const Post = ({ post, preview }) => {
     <section className='section'>
       {preview && <PreviewAlert />}
       <div className='container'>
-        <article className='prose !w-full md:!w-3/4 lg:!w-2/3 mx-auto !text-white'>
+        <article className='prose sm:max-w-full md:max-w-full lg:max-w-3xl mx-auto !text-white'>
           {router.isFallback ? (
             <Skeleton />
           ) : (
