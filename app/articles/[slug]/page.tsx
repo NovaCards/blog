@@ -38,6 +38,7 @@ const fetchBlogPost = async (slug: string): Promise<BlogItem> => {
             slug: '',
             date: new Date(queryResult.items[0].fields.date as string),
             content: queryResult.items[0].fields.content as any,
+            image: queryResult.items[0].fields.image as any,
         }
     };
     return blogItem;
@@ -47,9 +48,9 @@ export default async function BlogPage(props: BlogPageProps) {
     const { params } = props;
     const { slug } = params;
     const article = await fetchBlogPost(slug);
-    const { title, date, content } = article.fields;
+    const { title, date, content, image } = article.fields;
     return (
-        <main className="min-h-screen p-24 flex justify-center">
+        <main className="min-h-screen md:p-24 p-4 flex justify-center bg-zinc-950">
             <div className="max-w-2xl">
                 <h1 className="font-extrabold text-3xl mb-2">{title}</h1>
                 <p className="mb-6 text-slate-400 ">

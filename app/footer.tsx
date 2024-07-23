@@ -25,7 +25,7 @@ export const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex flex-row items-center justify-between">
+                <div className="flex-col flex lg:flex-row items-center justify-between">
                     <div className="flex flex-row items-center gap-2 mt-3 text-zinc-700 dark:text-zinc-200">
                         <Link href="https://twitter.com/NovacardsAI">
                             <TwitterLogoIcon className="w-5 h-5" />
@@ -39,14 +39,14 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-row items-center gap-5 mt-3 text-zinc-700 text-sm dark:text-zinc-200 underline">
                         <Link href="https://www.buymeacoffee.com/Novacards.ai">
-                            Support us
+                            Support
                         </Link>
                         <Link href="/privacy">Privacy</Link>
                         <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdwg0c3CYOFjFyugummH6sie34hjy7WyygKOvn5ZMPPOT1hdw/viewform">
-                            Contact us
+                            Contact
                         </Link>
-                        <Link href="https://novacards.ai">
-                            Main site
+                        <Link href="https://blog.novacards.ai">
+                            Blog
                         </Link>
                     </div>
                     <div></div>
