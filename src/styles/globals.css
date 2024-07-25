@@ -30,4 +30,12 @@
   .title {
     @apply font-bold tracking-tight;
   }
+
+  a {
+    @apply !text-white;
+  }
+
+  a:hover {
+    @apply !text-sky-300;
+  }
 }
