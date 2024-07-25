@@ -19,6 +19,14 @@
     @apply grow;
   }
 
+  #post-body img {
+    @apply w-full h-full;
+  }
+
+  #post-body a:hover {
+    @apply !text-sky-300;
+  }
+
   .section {
     @apply py-12;
   }
@@ -33,9 +41,5 @@
 
   a {
     @apply !text-white;
-  }
-
-  a:hover {
-    @apply !text-sky-300;
   }
 }
