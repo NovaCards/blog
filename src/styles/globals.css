@@ -20,7 +20,7 @@
   }
 
   #post-body img {
-    @apply w-full h-full;
+    @apply max-w-full h-max w-max;
   }
 
   #post-body a:hover {
