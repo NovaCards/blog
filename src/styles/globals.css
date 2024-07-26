@@ -20,7 +20,7 @@
   }
 
   #post-body img {
-    @apply max-w-full h-max w-max;
+    @apply w-3/4 h-full md:max-w-full md:w-max md:h-max;
   }
 
   #post-body a:hover {
