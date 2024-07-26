@@ -25,6 +25,12 @@
 
   #post-body a:hover {
     @apply !text-sky-300;
+
+  }
+
+  #post-body p {
+    @apply max-w-full;
+    overflow: hidden
   }
 
   .section {
